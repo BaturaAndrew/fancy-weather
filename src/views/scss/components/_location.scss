@@ -1,0 +1,33 @@
+.location {
+  box-sizing: border-box;
+  background: rgba(65, 68, 70, 0.7);
+  border-radius: 10px;
+  width: 375px;
+
+  #map {
+    width: 375px;
+    height: 300px;
+
+    @media screen and (max-width: 400px) {
+      width: 300px;
+      height: 200px;
+      margin-top: 10px;
+    }
+
+    .ymaps-2-1-75-map ymaps {
+      border-radius: 10px;
+    }
+  }
+
+  .coord {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px;
+    color: $azure;
+    mix-blend-mode: color-dodge;
+
+    p:nth-child(1) {
+      margin-right: 10px;
+    }
+  }
+}

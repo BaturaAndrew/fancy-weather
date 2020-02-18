@@ -1,0 +1,10 @@
+{
+  "placeholder": "Search city",
+  "btn": "Search",
+  "lat": "Latitude",
+  "lon": "Longitude",
+  "feels": "Feels like:",
+  "wind": "Wind:",
+  "windspeed": "m/s",
+  "humidity": "Humidity:"
+}

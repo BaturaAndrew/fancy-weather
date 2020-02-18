@@ -1,0 +1,93 @@
+.weather {
+  color: whitesmoke;
+  width: 375px;
+  height: 407px;
+  box-sizing: border-box;
+  background: rgba(65, 68, 70, 0.7);
+  border-radius: 10px;
+
+  @media screen and (max-width: 719px) {
+    margin-bottom: 20px;
+  }
+
+
+  .today-weather {
+    text-align: center;
+    padding-top: 10px;
+
+    &__city {
+      color: #e0f3f1;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__date {
+      margin: 10px 0;
+    }
+
+    &__picture {
+      width: 40%;
+      mix-blend-mode: color-dodge;
+      filter: contrast(0.5);
+    }
+
+    &__temp {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 8em;
+      justify-content: flex-start;
+    }
+
+    .add-info {
+      margin-bottom: 20px;
+
+      p {
+        color: $azure;
+        mix-blend-mode: color-dodge;
+        font-weight: bold;
+        font-size: 1em;
+      }
+    }
+  }
+
+
+  .three-days {
+    margin-bottom: 20px;
+
+    .day {
+      &__header {
+        font-family: Montserrat;
+        font-style: normal;
+        font-size: 1em;
+
+        @media screen and (max-width: 400px) {
+          font-size: 0.7em;
+        }
+
+        font-weight: bold;
+        text-align: center;
+        color: $azure;
+        mix-blend-mode: color-dodge;
+      }
+
+      &__temp {
+        justify-content: flex-start;
+
+        p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-size: 1.5em;
+          text-align: center;
+        }
+      }
+
+      &__picture {
+        width: 50%;
+        mix-blend-mode: color-dodge;
+        filter: contrast(0.5);
+      }
+    }
+  }
+}

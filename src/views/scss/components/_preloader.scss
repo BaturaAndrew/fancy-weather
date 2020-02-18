@@ -1,0 +1,70 @@
+.preloader {
+
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  perspective: 1600px;
+  perspective-origin: 20% 50%;
+  /* для плавного исчезновения */
+  transition: 0.5s all;
+  opacity: 1;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #0088cf;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* Анимация для блока */
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.b-ico-preloader {
+  background: url(https://cdn4.iconfinder.com/data/icons/weather-line-set/24/icn-weather-scattered-showers-512.png);
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: ico 5s infinite linear;
+  transform-style: preserve-3d;
+}
+
+@keyframes ico {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.preloader.fade {
+  opacity: 0;
+}

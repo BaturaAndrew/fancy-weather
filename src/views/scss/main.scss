@@ -1,0 +1,74 @@
+@import "base/conteiner-flex";
+@import "abstracts/variables";
+@import "components/preloader";
+@import "components/header";
+@import "components/speech-input";
+@import "components/weather";
+@import "components/location";
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.error {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+
+  h2 {
+    font-size: 50px;
+    color: rgb(57, 20, 100);
+  }
+
+  p {
+    margin-top: 50px;
+    font-size: 30px;
+    color: rgb(100, 20, 73);
+  }
+}
+
+.wrap {
+  min-width: 300px;
+  max-width: 1000px;
+  width: 97%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 5px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .header {
+    margin: 30px 0;
+    padding: 0 50px;
+
+    @media screen and (max-width: 818px) {
+      padding: 0 12px;
+    }
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 818px) {
+      justify-content: flex-start;
+    }
+  }
+
+  .main {
+    padding: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 818px) {
+      justify-content: center;
+      padding: 10px;
+    }
+  }
+
+}

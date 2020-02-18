@@ -1,0 +1,24 @@
+# парсер не будет искать другие конфиги родительских папках
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{html,svg}]
+indent_style = tab
+indent_style = tab
+
+[*.js]
+quote_type = single
+end_of_line = lf
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.josn]
+trim_trailing_whitespace = false
